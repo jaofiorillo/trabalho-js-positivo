@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Cadastro de Usuário</title>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link href="../css/cadastro.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div class="container cadastro-container">
+			<h2 class="text-center border-bottom border-3 p-2">Cadastro de Usuário</h2>
+			<form action="../src/server.js" method="POST">
+				<div class="form-group">
+					<label for="nome"><i class="fa fa-user"></i> Nome:</label>
+					<input
+						type="text"
+						class="form-control"
+						id="nome"
+						placeholder="Digite seu nome"
+					/>
+				</div>
+				<div class="form-group">
+					<label for="email"><i class="fa fa-envelope"></i> Email:</label>
+					<input
+						type="email"
+						class="form-control"
+						id="email"
+						placeholder="Digite seu email"
+					/>
+				</div>
+				<div class="form-group">
+					<label for="senha"><i class="fa fa-lock"></i> Senha:</label>
+					<input
+						type="password"
+						class="form-control"
+						id="senha"
+						placeholder="Digite sua senha"
+					/>
+				</div>
+				<button type="submit" class="btn btn-primary btn-block">
+					Cadastrar
+				</button>
+				<a href="./login.html" class="btn btn-secondary btn-block">
+					Voltar
+				</a>
+			</form>
+		
